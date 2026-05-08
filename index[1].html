@@ -895,7 +895,11 @@
         </div>
       </div>
 
-      <form class="quote-card" id="quote" aria-labelledby="quote-title">
+      <form class="quote-card" id="quote" name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" aria-labelledby="quote-title">
+        <input type="hidden" name="form-name" value="quote-request">
+        <p hidden>
+          <label>Do not fill this out: <input name="bot-field"></label>
+        </p>
         <h2 id="quote-title">Get a free cleaning quote</h2>
         <p class="mini-copy">Share the basics and the team will follow up with timing, scope, and next steps.</p>
         <div class="form-grid">
